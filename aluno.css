@@ -1,0 +1,97 @@
+body::before {
+    content: "";
+    background-image: url(./img/planodefundol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8; /* Altere o valor da opacidade conforme desejado (varia de 0 a 1) */
+    z-index: -1; /* Coloca o plano de fundo atrás de todo o conteúdo */
+}
+
+.container{
+    margin-top: -2%;
+}
+.center{
+    margin-top: -35px;
+}
+.arco {
+    width: 325px;
+}
+
+.nomelanche {
+    border-radius: 5px black;
+}
+
+.dia {
+    font-size: 40px;
+    margin-top: -20%;
+    margin-left: 11%;
+}
+
+.aceita {
+    font-size: 40px;
+    margin-top: -25%;
+    margin-left: 10%;
+}
+
+.nextday {
+    margin-left: 75%;
+    margin-top: -21%;
+}
+
+.amanha {
+    margin-left: 75px;
+}
+
+.circulo {
+    border-radius: 50%;
+}
+        
+.logo{
+    width: 68px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1330px) {
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}

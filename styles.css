@@ -1,0 +1,9 @@
+body{
+background-image: url(./img/frutas.jpg);
+background-size: cover;
+background-repeat: no-repeat, repeat-x;
+    }
+
+.imagem1{
+margin-left: 20%;
+}

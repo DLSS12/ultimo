@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanche do Dia</title>
+  <link rel="stylesheet" href="aluno.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="center">
+      <center>
+        <img src="./img/lanchedodia.png"><br>
+        <img src="./img/b-cuscuz.png">
+        <h3 class="nomelanche">cuscuz</h3>
+      </center>
+    </div>
+
+    <div id="diaDaSemana" class="aceita">
+
+      <script>
+        function obterDiaDaSemana() {
+          const diasDaSemana = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira'];
+          const dataAtual = new Date();
+          const diaDaSemana = dataAtual.getDay();
+
+          if (diaDaSemana >= 1 && diaDaSemana <= 4) {
+            document.getElementById('diaDaSemana').textContent = diasDaSemana[diaDaSemana - 1];
+          } else {
+            document.getElementById('diaDaSemana').textContent = "Outro dia da semana";
+          }
+        }
+
+        obterDiaDaSemana(); // Chamada inicial para exibir o dia da semana
+      </script>
+      <br>
+      <img src="./img/aceita.png"><br>
+      <a href="./aluno.html"><img src="./img/sim.png"></a>
+      <a href="./aluno.html"><img src="img/nao.png"></a>
+    </div>
+
+    <div class="nextday">
+      <center>
+        <h2>AMANHÃ</h2>
+        <img src="./img/cuscuz.jpg" width="230" height="230" class="circulo">
+      </center>
+    </div>
+  </div>
+  <img src="./img/logo.png" class="logo">
+</body>
+
+</html>
